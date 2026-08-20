@@ -236,3 +236,8 @@ Select EmployeeID, Name, Department, Salary from Former_employees;
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
+
+## GRADES 
+
+<img width="1354" height="598" alt="image" src="https://github.com/user-attachments/assets/7673bf31-65d0-4689-ab90-cbb5a6bee8df" />
+
