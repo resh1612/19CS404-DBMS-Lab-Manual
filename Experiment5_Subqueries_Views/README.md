@@ -38,19 +38,26 @@ DROP VIEW view_name;
 
 **Question 1**
 --
--- Paste Question 1 here
+-- 
+
+<img width="846" height="521" alt="image" src="https://github.com/user-attachments/assets/6f9acc19-95c9-467b-87d6-16bec3f34c6f" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+-- select * from GRADES g where grade = ( select min(grade) from GRADES where subject = g.subject);
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="848" height="426" alt="image" src="https://github.com/user-attachments/assets/c7c22413-0a92-4c10-b9f8-814f99cea156" />
+
+
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+
+
 
 ```sql
 -- Paste your SQL code below for Question 2
