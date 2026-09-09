@@ -37,8 +37,6 @@ DROP VIEW view_name;
 ```
 
 **Question 1**
---
--- 
 
 <img width="846" height="521" alt="image" src="https://github.com/user-attachments/assets/6f9acc19-95c9-467b-87d6-16bec3f34c6f" />
 
