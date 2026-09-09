@@ -57,112 +57,148 @@ DROP VIEW view_name;
 **Question 2**
 ---
 
+<img width="824" height="436" alt="image" src="https://github.com/user-attachments/assets/c06d6a63-403d-4f75-bdc4-aebc39ad1916" />
 
 
 ```sql
--- Paste your SQL code below for Question 2
+-- select * from customer where city != ( select city from customer where id = (select max(id) from customer));
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="840" height="461" alt="image" src="https://github.com/user-attachments/assets/4245ab7b-4aa4-4a8c-ae4a-95890301d809" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="793" height="488" alt="image" src="https://github.com/user-attachments/assets/1c37fd52-e09b-48d1-b83f-c9ffb87ec08a" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+-- SELECT commission 
+FROM salesman 
+WHERE salesman_id IN (
+    SELECT salesman_id 
+    FROM customer 
+    WHERE city = 'Paris'
+);
+
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="301" height="290" alt="image" src="https://github.com/user-attachments/assets/cec22df3-76a1-47b7-a0c6-6c2778deb856" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- <img width="718" height="526" alt="image" src="https://github.com/user-attachments/assets/37662707-9d07-4b53-8afc-cde246954783" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+-- select * from CUSTOMERS where salary > 1500;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="871" height="450" alt="image" src="https://github.com/user-attachments/assets/2e8aa75f-c804-457e-9d54-999c3d7bdb88" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="706" height="481" alt="image" src="https://github.com/user-attachments/assets/d5267aae-8f81-4a6b-81e4-83a06d89a733" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+-- select * from CUSTOMERS where SALARY > 4500;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="863" height="389" alt="image" src="https://github.com/user-attachments/assets/9d67bbcf-a9ef-40c4-89f4-922ed6412477" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="822" height="326" alt="image" src="https://github.com/user-attachments/assets/f2ad19c4-bfa6-47bd-b885-b23993e396db" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+-- select department_id,department_name from Departments where length(department_name) > ( select avg(length(department_name)) from Departments);
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="419" height="336" alt="image" src="https://github.com/user-attachments/assets/d69dea36-2b60-4420-9c63-2233084d7c54" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="682" height="454" alt="image" src="https://github.com/user-attachments/assets/84701f14-c367-4330-b0bc-fae24c395119" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+-- select * from CUSTOMERS where ADDRESS = 'Delhi';
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="855" height="275" alt="image" src="https://github.com/user-attachments/assets/fd103ac9-8d8d-4585-ab93-f22ff90c2f44" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="800" height="509" alt="image" src="https://github.com/user-attachments/assets/09d7da6a-7060-4706-84df-e3c7df5abf78" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+-- select * from customer where customer_id = ( select salesman_id from salesman where name = 'Mc Lyon') - 2001;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="877" height="290" alt="image" src="https://github.com/user-attachments/assets/f5693f27-10e9-4725-bd9c-60a9863ea17e" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="864" height="472" alt="image" src="https://github.com/user-attachments/assets/33167f2c-d689-46c2-8495-bb78f3ffbaa8" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+-- SELECT ord_no, purch_amt, ord_date, customer_id, salesman_id
+FROM orders
+WHERE salesman_id = (
+    SELECT salesman_id
+    FROM salesman
+    WHERE name = 'Paul Adam'
+);
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="852" height="332" alt="image" src="https://github.com/user-attachments/assets/dab0c11f-4b5e-4eb8-a8ae-e8cb8ea7d106" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="859" height="469" alt="image" src="https://github.com/user-attachments/assets/0b9da7fa-0ad1-40a6-8f81-171ee2892c47" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+-- select student_name , grade  from GRADES g where grade = (select max(grade) from GRADES where subject = g.subject);
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="573" height="357" alt="image" src="https://github.com/user-attachments/assets/d890e010-32b9-436e-8024-63fe67a1a70c" />
+
 
 
 ## RESULT
 Thus, the SQL queries to implement subqueries and views have been executed successfully.
+
+## GRADES
+
+<img width="1343" height="409" alt="image" src="https://github.com/user-attachments/assets/15692adf-838d-4836-b108-79f9b60323c1" />
+
